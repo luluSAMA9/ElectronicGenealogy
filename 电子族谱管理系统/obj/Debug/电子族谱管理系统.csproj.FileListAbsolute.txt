@@ -1,0 +1,10 @@
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\bin\Debug\电子族谱管理系统.exe.config
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\bin\Debug\电子族谱管理系统.exe
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\bin\Debug\电子族谱管理系统.pdb
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.csprojResolveAssemblyReference.cache
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.修改族谱.resources
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.族谱.resources
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.Properties.Resources.resources
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.csproj.GenerateResource.Cache
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.exe
+C:\Users\lsy\Desktop\电子族谱管理系统\电子族谱管理系统\obj\Debug\电子族谱管理系统.pdb
