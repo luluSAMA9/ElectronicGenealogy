@@ -26,11 +26,12 @@ namespace 软工大作业
             }
             else
             {
-                string connString = @"Server = SQLOLEDB;
-                                Data Source = .;
-                                Initial Catalog = 电子族谱;
-                                User ID = sa;
-                                Password = woaiwo525";
+                string connString = @"Server = .;
+                                Data Source = 127.0.0.1;
+                                Initial Catalog = 族谱数据库; 
+                                Persist Security Info = True; 
+                                User ID = sa; 
+                                Password = 123456";
                 String sql = @"SELECT TBL_ID,TBL_Pwd
                            FROM [TBL_family_tree]
                            WHERE TBL_ID = @TBL_ID";
@@ -61,6 +62,11 @@ namespace 软工大作业
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Result_Load(object sender, EventArgs e)
         {
 
         }

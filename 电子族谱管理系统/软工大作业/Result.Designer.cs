@@ -142,6 +142,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Result";
             this.Size = new System.Drawing.Size(300, 200);
+            this.Load += new System.EventHandler(this.Result_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

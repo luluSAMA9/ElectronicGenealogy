@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using 电子族谱管理系统;
 
 namespace 软工大作业
 {
@@ -70,15 +71,16 @@ namespace 软工大作业
             }
             else
             {
-                //   添加族谱 t = new 添加族谱();
-                //   t.ShowDialog();
+                   //添加族谱 t = new 添加族谱();
+                  // t.ShowDialog();
             }
         }
 
         private void tslMyTBL_Click(object sender, EventArgs e)
         {
-         //   族谱 z = new 族谱();
-         //   z.ShowDialog();
+            族谱 z = new 族谱();
+            z.TBL_ID = 首页.TBLId;
+            z.ShowDialog();
         }
     }
 }

@@ -40,11 +40,12 @@ namespace 软工大作业
                 MessageBox.Show("请完善信息！", "确定", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             //连接数据库
-            string connString = @"Server = SQLOLEDB;
-                                Data Source = .;
-                                Initial Catalog = 电子族谱;
-                                User ID = sa;
-                                Password = woaiwo525";
+            string connString = @"Server = .;
+                                Data Source = 127.0.0.1;
+                                Initial Catalog = 族谱数据库; 
+                                Persist Security Info = True; 
+                                User ID = sa; 
+                                Password = 123456";
             //构造SQL命令
             StringBuilder sb = new StringBuilder();
             sb.Append(@"INSERT INTO [Users](ID,User_password)VALUES(");

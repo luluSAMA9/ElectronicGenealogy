@@ -14,6 +14,7 @@ namespace 软工大作业
     
     public partial class TBL_Search : Form
     {
+       
         public Result r;
         public TBL_Search()
         {
@@ -26,11 +27,12 @@ namespace 软工大作业
             {
                 MessageBox.Show("请先输入族谱ID！", "确定", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-            string connString = @"Server = SQLOLEDB;
-                                Data Source = .;
-                                Initial Catalog = 电子族谱;
-                                User ID = sa;
-                                Password = woaiwo525";
+            string connString = @"Server = .;
+                                Data Source = 127.0.0.1;
+                                Initial Catalog = 族谱数据库; 
+                                Persist Security Info = True; 
+                                User ID = sa; 
+                                Password = 123456";
             String sql = @"SELECT *
                            FROM TBL_family_tree
                            WHERE TBL_ID = " + ttbSch.Text + "";

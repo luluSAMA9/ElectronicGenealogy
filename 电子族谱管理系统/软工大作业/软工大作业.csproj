@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="memchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memchange.Designer.cs" />
+    <Compile Include="memchange2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memchange2.Designer.cs" />
+    <Compile Include="memmodi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memmodi.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login.cs">
@@ -78,9 +90,42 @@
     <Compile Include="TBL_Search.Designer.cs">
       <DependentUpon>TBL_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="修改族谱.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改族谱.designer.cs">
+      <DependentUpon>修改族谱.cs</DependentUpon>
+    </Compile>
+    <Compile Include="创建族谱.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="创建族谱.designer.cs">
+      <DependentUpon>创建族谱.cs</DependentUpon>
+    </Compile>
+    <Compile Include="族谱.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="族谱.designer.cs">
+      <DependentUpon>族谱.cs</DependentUpon>
+    </Compile>
+    <Compile Include="族谱信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="族谱信息.designer.cs">
+      <DependentUpon>族谱信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加成员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加成员.designer.cs">
+      <DependentUpon>添加成员.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="memchange.resx" />
+    <EmbeddedResource Include="memchange2.resx" />
+    <EmbeddedResource Include="memmodi.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,6 +147,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TBL_Search.resx">
       <DependentUpon>TBL_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改族谱.resx">
+      <DependentUpon>修改族谱.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="创建族谱.resx">
+      <DependentUpon>创建族谱.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="族谱.resx">
+      <DependentUpon>族谱.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="族谱信息.resx">
+      <DependentUpon>族谱信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加成员.resx">
+      <DependentUpon>添加成员.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -11,8 +11,10 @@ using System.Data.SqlClient;
 
 namespace 软工大作业
 {
+    
     public partial class Login : Form
     {
+        public string id;
         public Login()
         {
             InitializeComponent();
@@ -40,11 +42,12 @@ namespace 软工大作业
             }
             else
             {
-                string connString = @"Server = SQLOLEDB;
-                                Data Source = LAPTOP-DAG67M6B;
-                                Initial Catalog = 电子族谱;
-                                User ID = sa;
-                                Password = woaiwo525";
+                string connString = @"Server = .;
+                                Data Source = 127.0.0.1;
+                                Initial Catalog = 族谱数据库; 
+                                Persist Security Info = True; 
+                                User ID = sa; 
+                                Password = 123456";
                 String sql = @"SELECT ID,User_password
                            FROM [Users]
                            WHERE ID = @ID";
@@ -62,9 +65,13 @@ namespace 软工大作业
                 }
                 else if (reader["User_password"].ToString().Trim() == ttbPwd.Text.Trim())
                 {
+                    id = ttbID.Text;
                     首页.UserId = ttbID.Text;
                     MessageBox.Show("登录成功！", "提示");
                     this.DialogResult = DialogResult.OK;
+                    首页 f1 = new 首页();
+                    首页.TBLId = this.id;
+                    f1.Show();
                     this.Dispose();
                     this.Close();
                 }
@@ -85,6 +92,11 @@ namespace 软工大作业
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ttbID_TextChanged(object sender, EventArgs e)
         {
 
         }

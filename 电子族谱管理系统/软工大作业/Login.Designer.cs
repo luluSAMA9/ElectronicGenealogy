@@ -47,6 +47,7 @@
             this.ttbID.Name = "ttbID";
             this.ttbID.Size = new System.Drawing.Size(227, 34);
             this.ttbID.TabIndex = 0;
+            this.ttbID.TextChanged += new System.EventHandler(this.ttbID_TextChanged);
             // 
             // ttbPwd
             // 
