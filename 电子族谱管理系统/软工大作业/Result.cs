@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using 电子族谱管理系统;
 
 namespace 软工大作业
 {
     public partial class Result : UserControl
     {
+        public string TBLid1;
         public Result()
         {
             InitializeComponent();
@@ -49,9 +51,11 @@ namespace 软工大作业
                 else if (reader["TBL_Pwd"].ToString().Trim() == ttbTBLPwd.Text.Trim())
                 {
                     MessageBox.Show("密码正确！", "确定", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    TBLid1 = lbl_Schid.Text;
                     首页.TBLId = lbl_Schid.Text;
-                //    族谱信息 x = new 族谱信息();
-                //    x.ShowDialog();
+                    族谱信息 x = new 族谱信息();
+                    x.TBL_ID = this.TBLid1;
+                    x.ShowDialog();
                 }
                 else
                 {

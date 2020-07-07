@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using find;
 using 电子族谱管理系统;
 
 namespace 软工大作业
@@ -81,6 +82,32 @@ namespace 软工大作业
             族谱 z = new 族谱();
             z.TBL_ID = 首页.TBLId;
             z.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            find1 a = new find1();
+            a.Show();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace find
 {
-    partial class find
+    partial class find1
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(find));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(find1));
             this.label1 = new System.Windows.Forms.Label();
             this.ID_value = new System.Windows.Forms.TextBox();
             this.find_branch = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             // ID_value
             // 
             this.ID_value.Location = new System.Drawing.Point(507, 73);
-            this.ID_value.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ID_value.Margin = new System.Windows.Forms.Padding(2);
             this.ID_value.Name = "ID_value";
             this.ID_value.Size = new System.Drawing.Size(197, 25);
             this.ID_value.TabIndex = 1;
@@ -65,7 +65,7 @@
             this.find_branch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.find_branch.Font = new System.Drawing.Font("宋体", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.find_branch.Location = new System.Drawing.Point(193, 330);
-            this.find_branch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.find_branch.Margin = new System.Windows.Forms.Padding(2);
             this.find_branch.Name = "find_branch";
             this.find_branch.Size = new System.Drawing.Size(151, 51);
             this.find_branch.TabIndex = 2;
@@ -78,7 +78,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("宋体", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.Location = new System.Drawing.Point(495, 424);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 51);
             this.button2.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.find_clan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.find_clan.Font = new System.Drawing.Font("宋体", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.find_clan.Location = new System.Drawing.Point(193, 424);
-            this.find_clan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.find_clan.Margin = new System.Windows.Forms.Padding(2);
             this.find_clan.Name = "find_clan";
             this.find_clan.Size = new System.Drawing.Size(151, 51);
             this.find_clan.TabIndex = 4;
@@ -103,7 +103,7 @@
             this.find_member.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.find_member.Font = new System.Drawing.Font("宋体", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.find_member.Location = new System.Drawing.Point(495, 330);
-            this.find_member.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.find_member.Margin = new System.Windows.Forms.Padding(2);
             this.find_member.Name = "find_member";
             this.find_member.Size = new System.Drawing.Size(148, 51);
             this.find_member.TabIndex = 5;
@@ -115,14 +115,14 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(132, 118);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 44;
             this.dataGridView1.Size = new System.Drawing.Size(570, 193);
             this.dataGridView1.TabIndex = 6;
             // 
-            // find
+            // find1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,8 +136,8 @@
             this.Controls.Add(this.ID_value);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "find";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "find1";
             this.Text = "查询成员";
             this.Load += new System.EventHandler(this.find_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

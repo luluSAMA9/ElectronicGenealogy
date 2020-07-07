@@ -16,7 +16,7 @@ namespace 软工大作业
 
         public memchange2()
         {
-            InitializeComponent1();
+            InitializeComponent();
         }
 
         private void confirm1_Click(object sender, EventArgs e)
@@ -28,16 +28,17 @@ namespace 软工大作业
                                 User ID = sa; 
                                 Password = 123456";
             StringBuilder sb = new StringBuilder();
-            sb.Append(@" UPDATE 成员表 SET ");            
+            sb.Append(@" UPDATE Member SET ");
+            
             sb.Append("M_ID='" + textBox1.Text + "',");
-            sb.Append("M_sex='" + textBox2.Text + "',");
+            sb.Append("sex='" + textBox2.Text + "',");
             sb.Append("TBL_ID='" + textBox3.Text + "',");
-            sb.Append("M_birthday='" + textBox4.Text + "',");
-            sb.Append("M_death='" + textBox5.Text + "',");
-            sb.Append("M_name='" + textBox6.Text + "'");
-            sb.Append("FatherID='" + textBox7.Text + "'");
-            sb.Append("spousename='" + textBox8.Text + "'");
-            sb.Append("M_seniority='" + textBox9.Text + "'");
+            sb.Append("birthday='" + textBox4.Text + "',");
+            //sb.Append("M_death='" + textBox5.Text + "',");
+            sb.Append("name='" + textBox6.Text + "'");
+           // sb.Append("FatherID='" + textBox7.Text + "'");
+           // sb.Append("spousename='" + textBox8.Text + "'");
+            //sb.Append("M_seniority='" + textBox9.Text + "'");
             sb.Append(" WHERE M_ID = '" + memberid2 + "'");
 
             string sql = sb.ToString();
@@ -54,42 +55,6 @@ namespace 软工大作业
             {
                 MessageBox.Show("出问题了! \n出错原因:" + msg.Message);
             }
-        }
-
-        private void InitializeComponent1()
-        {
-            this.SuspendLayout();
-            // 
-            // memchange2
-            // 
-            this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Name = "memchange2";
-            this.Load += new System.EventHandler(this.memchange2_Load);
-            this.ResumeLayout(false);
-
-        }
-
-        private void memchange2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InitializeComponent0()
-        {
-            this.SuspendLayout();
-            // 
-            // memchange2
-            // 
-            this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Name = "memchange2";
-            this.Load += new System.EventHandler(this.memchange2_Load_1);
-            this.ResumeLayout(false);
-
-        }
-
-        private void memchange2_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

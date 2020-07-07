@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 软工大作业;
+using 电子族谱管理系统;
 
 namespace find
 {
-    public partial class find : Form
+    public partial class find1 : Form
     {
-        public find()
+
+        public find1()
         {
             InitializeComponent();
         }
@@ -169,6 +173,11 @@ namespace find
         }
 
         private void find_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

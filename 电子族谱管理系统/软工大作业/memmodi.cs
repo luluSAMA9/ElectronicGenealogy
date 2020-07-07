@@ -16,7 +16,7 @@ namespace 软工大作业
 
         public memmodi()
         {
-            InitializeComponent2();
+            InitializeComponent();
         }
 
         private void 成员展示_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace 软工大作业
                                 Password = 123456";
                 SqlConnection SqlCon = new SqlConnection(connString); //数据库连接
                 SqlCon.Open(); //打开数据库
-                string sql = "Select * from 成员表 where TBL_ID=" +stationID;//查找用户sql语句
+                string sql = "Select * from Member where TBL_ID=" +stationID;//查找用户sql语句
                 SqlCommand cmd = new SqlCommand(sql, SqlCon);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = sql;
@@ -37,7 +37,8 @@ namespace 软工大作业
                 SqlDataAdapter msda;
                 msda = new SqlDataAdapter(cmd);
                 msda.Fill(dt);
-                SqlCon.Close();   
+                SqlCon.Close();
+               // memlist r1 = new memlist();   
                 DataTable d1 = new DataTable();   //因为查询是会有结果返回的，所以需要用DataTable的对象来承接返回的结果。
                 d1 = dt;
                 if (d1 != null && d1.Rows.Count > 0)
@@ -51,24 +52,6 @@ namespace 软工大作业
         {
             memchange memchange1 = new memchange();
             memchange1.Show();
-        }
-
-        private void InitializeComponent2()
-        {
-            this.SuspendLayout();
-            // 
-            // memmodi
-            // 
-            this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Name = "memmodi";
-            this.Load += new System.EventHandler(this.memmodi_Load);
-            this.ResumeLayout(false);
-
-        }
-
-        private void memmodi_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

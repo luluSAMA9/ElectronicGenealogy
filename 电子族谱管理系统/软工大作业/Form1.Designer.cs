@@ -41,9 +41,12 @@
             this.tslRsr = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCreate
@@ -51,7 +54,7 @@
             this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(132)))), ((int)(((byte)(82)))));
             this.btnCreate.Font = new System.Drawing.Font("黑体", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnCreate.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnCreate.Location = new System.Drawing.Point(24, 18);
+            this.btnCreate.Location = new System.Drawing.Point(5, 6);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(166, 119);
             this.btnCreate.TabIndex = 0;
@@ -65,7 +68,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(132)))), ((int)(((byte)(82)))));
             this.btnSearch.Font = new System.Drawing.Font("黑体", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnSearch.Location = new System.Drawing.Point(24, 16);
+            this.btnSearch.Location = new System.Drawing.Point(5, 7);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(168, 119);
             this.btnSearch.TabIndex = 1;
@@ -157,20 +160,47 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnCreate);
-            this.panel1.Location = new System.Drawing.Point(95, 139);
+            this.panel1.Location = new System.Drawing.Point(56, 139);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 159);
+            this.panel1.Size = new System.Drawing.Size(182, 137);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btnSearch);
-            this.panel2.Location = new System.Drawing.Point(412, 139);
+            this.panel2.Location = new System.Drawing.Point(270, 139);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 159);
+            this.panel2.Size = new System.Drawing.Size(182, 137);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(478, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(182, 137);
+            this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(132)))), ((int)(((byte)(82)))));
+            this.button2.Font = new System.Drawing.Font("黑体", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button2.Location = new System.Drawing.Point(7, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 119);
+            this.button2.TabIndex = 1;
+            this.button2.TabStop = false;
+            this.button2.Text = "查询信息";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // 首页
             // 
@@ -179,6 +209,7 @@
             this.BackgroundImage = global::软工大作业.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(732, 453);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
@@ -192,6 +223,7 @@
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -210,6 +242,8 @@
         public System.Windows.Forms.ToolStripButton tslSign;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
     }
 }
 

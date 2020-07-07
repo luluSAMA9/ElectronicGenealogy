@@ -38,7 +38,7 @@ namespace 电子族谱管理系统
                                 Password = 123456";
             //连接数据库
             StringBuilder sb = new StringBuilder();
-            string sql = "SELECT TBL_ID ,ID,TBL_name,surname,introduction,TBL_date from TBL_family_tree where TBL_ID" + TBL_ID + "'";//查询数据库语言 ，选择的SQL语句
+            string sql = "SELECT TBL_ID ,ID,TBL_name,surname,introduction,TBL_date from TBL_family_tree where TBL_ID = '" + TBL_ID + "'";//查询数据库语言 ，选择的SQL语句
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
             SqlCommand cmd = new SqlCommand(sql, conn);
